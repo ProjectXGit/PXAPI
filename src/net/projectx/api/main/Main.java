@@ -10,6 +10,7 @@ public class Main extends JavaPlugin {
     @Override
     public void onLoad() {
         super.onLoad();
+        System.out.println("Test");
     }
 
     @Override
