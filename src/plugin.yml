@@ -1,0 +1,4 @@
+name: PXAPI
+version: Alpha
+main: net.projectx.api.main.PXAPI
+author: Iclipse
