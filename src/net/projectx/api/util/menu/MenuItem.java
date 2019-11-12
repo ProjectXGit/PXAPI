@@ -1,7 +1,6 @@
 package net.projectx.api.util.menu;
 
 import org.bukkit.Material;
-import org.bukkit.entity.Player;
 import org.bukkit.event.inventory.InventoryClickEvent;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.meta.ItemMeta;
@@ -141,9 +140,8 @@ public abstract class MenuItem {
     /**
      * Called when a player clicks this menu item
      *
-     * @param player The clicking player
+     * @param event The clicking player
      */
-    public abstract void onLeftClick(Player player);
+    public abstract void onClick(InventoryClickEvent event);
 
-    public abstract void onRightClick(Player player);
 }

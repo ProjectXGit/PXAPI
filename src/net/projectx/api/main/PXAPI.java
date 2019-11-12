@@ -10,6 +10,7 @@ import net.projectx.api.util.Command.BukkitCommand;
 import net.projectx.api.util.Command.PXCommand;
 import net.projectx.api.util.executor.ThreadExecutor;
 import net.projectx.api.util.executor.types.BukkitExecutor;
+import net.projectx.api.util.menu.PopupMenuAPI;
 import org.bukkit.Bukkit;
 import org.bukkit.command.Command;
 import org.bukkit.event.Listener;
@@ -54,6 +55,7 @@ public class PXAPI extends JavaPlugin {
     public void registerListener() {
         Bukkit.getPluginManager().registerEvents(new JoinListener(), this);
         Bukkit.getPluginManager().registerEvents(new ChatListener(), this);
+        Bukkit.getPluginManager().registerEvents(new PopupMenuAPI(), this);
     }
 
     public void registerCommands() {
