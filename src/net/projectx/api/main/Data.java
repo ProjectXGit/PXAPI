@@ -12,6 +12,7 @@ public class Data {
     public static String noperm = prefix + "§4Dazu hast du keine Berechtigung!";
     public static String consoleonly = "§4Dieser Befehl kann nur von der Knsole ausgeführt werden!";
 
+
     public static Plugin instance;
     public static Tablist tablist;
 }

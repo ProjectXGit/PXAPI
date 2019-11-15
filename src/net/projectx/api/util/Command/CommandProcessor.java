@@ -83,7 +83,7 @@ public class CommandProcessor<S> {
             return;
         }
 
-        //Parameter mit denen der Command aufgerufen wird
+        //Parameter mit denen der command aufgerufen wird
         final Object[] params = new Object[methodParameters.length];
         params[0] = sender;
         int start = 0;
@@ -127,7 +127,7 @@ public class CommandProcessor<S> {
             params[methodParameters.length - 1] = Joiner.on(' ').join(Arrays.asList(args).subList(methodParameters.length - (2 + start), args.length));
         }
 
-        //Command Ausführen
+        //command Ausführen
         if (command.runAsync()) {
             ThreadExecutor.executeAsync(() -> execute(sender, params));
         } else {
